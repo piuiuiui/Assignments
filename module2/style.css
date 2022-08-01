@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 100px;
+    text-align: center;
+    color: black;
+    font-size: 175%;
+}
+
+section {
+    position: relative;
+    padding: 15px;
+    width: 100%;
+}
+
+.box {
+    position: relative;
+    background-color: gray;
+    border: 5px solid black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.content {
+    padding: 5px;
+    padding-top: 35px;
+    border: none;
+    color: black;
+    margin: 0px;
+    height: 200px;
+    text-align: justify;
+    overflow: auto;
+}
+
+.name1, .name2, .name3{
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: 0px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.name1 {
+    background-color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name2 {
+    color: white;
+    background-color: maroon;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name3 {
+    background-color: rgb(230, 174, 71);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        float: left;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 100%;
+    }
+}
